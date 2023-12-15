@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>model-viewer【視野拡張システム】</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+</head>
+<body>
+    <h2>視野拡張システム</h2>
+    <hr />
+    以下の画像をタップするとARモードで表示できます<br>
+<div style="width:90%; margin:0 auto; height:80vh;">
+    <model-viewer
+        ar
+        ar-modes="scene-viewer webxr quick-look"
+        alt="human"
+        src="./3DModels/atsushi.glb"
+        ios-src="./3DModels/atsushi.usdz"
+        style="width:80%;height:80%;"                  
+        background-color="#70BCD1"
+        shadow-intensity = 1
+        shadow-softness = 0
+        camera-controls
+        autoplay
+        interaction-prompt="auto"
+        auto-rotate ar>
+    </model-viewer>
+</div>
+</body>
+<style>
+</style>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>model-viewer demo</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer@1.0.0/dist/model-viewer.min.js"></script>
+    </head>
+    <body>
+        <model-viewer
+            ar
+            src="MagCup.glb"
+            ios-src="MagCup.usdz"
+
+            style="width:100%;height:1000px;"
+
+            camera-controls
+            shadow-intensity = 1
+            shadow-softness = 0
+            camera-taret = "1.0m 1.0m 0m"
+            camera-orbit = "90deg -270deg 100%"
+        >
+        </model-viewer>
+    </body>
+    <style>
+        model-viewer
+        {
+            width:100%;
+            height:640px;
+            background-color:#70BCD1;
+        }
+    </style>
+</html>
+ -->
